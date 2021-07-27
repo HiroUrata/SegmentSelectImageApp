@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		5455E39C26AFE7E9007FA9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455E39B26AFE7E9007FA9D1 /* Assets.xcassets */; };
 		5455E39F26AFE7E9007FA9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455E39D26AFE7E9007FA9D1 /* LaunchScreen.storyboard */; };
 		5455E3A726AFE82E007FA9D1 /* SegmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455E3A626AFE82E007FA9D1 /* SegmentFile.swift */; };
+		5455E3AC26AFEA9E007FA9D1 /* AlamofireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455E3AB26AFEA9E007FA9D1 /* AlamofireModel.swift */; };
+		5455E3AE26AFEAD2007FA9D1 /* JsonDataSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455E3AD26AFEAD2007FA9D1 /* JsonDataSets.swift */; };
 		B37B4DC08297F5A107613DF1 /* Pods_SegmentSelectImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF30C7DD410861BDD9C3503 /* Pods_SegmentSelectImageApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		5455E39E26AFE7E9007FA9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5455E3A026AFE7E9007FA9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5455E3A626AFE82E007FA9D1 /* SegmentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFile.swift; sourceTree = "<group>"; };
+		5455E3AB26AFEA9E007FA9D1 /* AlamofireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireModel.swift; sourceTree = "<group>"; };
+		5455E3AD26AFEAD2007FA9D1 /* JsonDataSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JsonDataSets.swift; path = ../../../../../Documents/JsonDataSets.swift; sourceTree = "<group>"; };
 		6EF30C7DD410861BDD9C3503 /* Pods_SegmentSelectImageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentSelectImageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD45A93654984B3676B299 /* Pods-SegmentSelectImageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentSelectImageApp.release.xcconfig"; path = "Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp.release.xcconfig"; sourceTree = "<group>"; };
 		CF217B69756D326DEBB3A225 /* Pods-SegmentSelectImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentSelectImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +69,9 @@
 		5455E39126AFE7E3007FA9D1 /* SegmentSelectImageApp */ = {
 			isa = PBXGroup;
 			children = (
+				5455E3AA26AFEA88007FA9D1 /* Model */,
+				5455E3A926AFEA81007FA9D1 /* View */,
+				5455E3A826AFEA77007FA9D1 /* Controller */,
 				5455E39226AFE7E3007FA9D1 /* AppDelegate.swift */,
 				5455E39426AFE7E3007FA9D1 /* SceneDelegate.swift */,
 				5455E39626AFE7E3007FA9D1 /* ViewController.swift */,
@@ -75,6 +82,29 @@
 				5455E3A026AFE7E9007FA9D1 /* Info.plist */,
 			);
 			path = SegmentSelectImageApp;
+			sourceTree = "<group>";
+		};
+		5455E3A826AFEA77007FA9D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5455E3A926AFEA81007FA9D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5455E3AA26AFEA88007FA9D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5455E3AD26AFEAD2007FA9D1 /* JsonDataSets.swift */,
+				5455E3AB26AFEA9E007FA9D1 /* AlamofireModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77F7DFC3D5EF6ED9EE90A127 /* Frameworks */ = {
@@ -91,7 +121,6 @@
 				CF217B69756D326DEBB3A225 /* Pods-SegmentSelectImageApp.debug.xcconfig */,
 				A8DD45A93654984B3676B299 /* Pods-SegmentSelectImageApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,7 +240,9 @@
 			files = (
 				5455E39726AFE7E3007FA9D1 /* ViewController.swift in Sources */,
 				5455E39326AFE7E3007FA9D1 /* AppDelegate.swift in Sources */,
+				5455E3AE26AFEAD2007FA9D1 /* JsonDataSets.swift in Sources */,
 				5455E39526AFE7E3007FA9D1 /* SceneDelegate.swift in Sources */,
+				5455E3AC26AFEA9E007FA9D1 /* AlamofireModel.swift in Sources */,
 				5455E3A726AFE82E007FA9D1 /* SegmentFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
