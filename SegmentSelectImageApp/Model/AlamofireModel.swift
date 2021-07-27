@@ -20,7 +20,7 @@ extension AlamofireModel{
     
     func searchGetImageURL(searchKeyword:String){
 
-            AF.request("https://pixabay.com/api/?key=22343236-f9a23846f5c6250f4483d03d6&q=\(searchKeyword)", method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
+            AF.request("https://pixabay.com/api/?key=~~~~~~~~~APIKey~~~~~~~~~&q=\(searchKeyword)", method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
 
                 switch response.result{
 
