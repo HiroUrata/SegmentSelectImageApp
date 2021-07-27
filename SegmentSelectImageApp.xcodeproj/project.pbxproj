@@ -13,6 +13,8 @@
 		5455E39A26AFE7E3007FA9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455E39826AFE7E3007FA9D1 /* Main.storyboard */; };
 		5455E39C26AFE7E9007FA9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455E39B26AFE7E9007FA9D1 /* Assets.xcassets */; };
 		5455E39F26AFE7E9007FA9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455E39D26AFE7E9007FA9D1 /* LaunchScreen.storyboard */; };
+		5455E3A726AFE82E007FA9D1 /* SegmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455E3A626AFE82E007FA9D1 /* SegmentFile.swift */; };
+		B37B4DC08297F5A107613DF1 /* Pods_SegmentSelectImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF30C7DD410861BDD9C3503 /* Pods_SegmentSelectImageApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		5455E39B26AFE7E9007FA9D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5455E39E26AFE7E9007FA9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5455E3A026AFE7E9007FA9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5455E3A626AFE82E007FA9D1 /* SegmentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFile.swift; sourceTree = "<group>"; };
+		6EF30C7DD410861BDD9C3503 /* Pods_SegmentSelectImageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentSelectImageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DD45A93654984B3676B299 /* Pods-SegmentSelectImageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentSelectImageApp.release.xcconfig"; path = "Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp.release.xcconfig"; sourceTree = "<group>"; };
+		CF217B69756D326DEBB3A225 /* Pods-SegmentSelectImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentSelectImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37B4DC08297F5A107613DF1 /* Pods_SegmentSelectImageApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5455E39126AFE7E3007FA9D1 /* SegmentSelectImageApp */,
 				5455E39026AFE7E3007FA9D1 /* Products */,
+				C64296EDDA2E95C6D0B10F41 /* Pods */,
+				77F7DFC3D5EF6ED9EE90A127 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,31 @@
 				5455E39226AFE7E3007FA9D1 /* AppDelegate.swift */,
 				5455E39426AFE7E3007FA9D1 /* SceneDelegate.swift */,
 				5455E39626AFE7E3007FA9D1 /* ViewController.swift */,
+				5455E3A626AFE82E007FA9D1 /* SegmentFile.swift */,
 				5455E39826AFE7E3007FA9D1 /* Main.storyboard */,
 				5455E39B26AFE7E9007FA9D1 /* Assets.xcassets */,
 				5455E39D26AFE7E9007FA9D1 /* LaunchScreen.storyboard */,
 				5455E3A026AFE7E9007FA9D1 /* Info.plist */,
 			);
 			path = SegmentSelectImageApp;
+			sourceTree = "<group>";
+		};
+		77F7DFC3D5EF6ED9EE90A127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EF30C7DD410861BDD9C3503 /* Pods_SegmentSelectImageApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C64296EDDA2E95C6D0B10F41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF217B69756D326DEBB3A225 /* Pods-SegmentSelectImageApp.debug.xcconfig */,
+				A8DD45A93654984B3676B299 /* Pods-SegmentSelectImageApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5455E3A326AFE7E9007FA9D1 /* Build configuration list for PBXNativeTarget "SegmentSelectImageApp" */;
 			buildPhases = (
+				94564395ABC7FB86570EF2B7 /* [CP] Check Pods Manifest.lock */,
 				5455E38B26AFE7E3007FA9D1 /* Sources */,
 				5455E38C26AFE7E3007FA9D1 /* Frameworks */,
 				5455E38D26AFE7E3007FA9D1 /* Resources */,
+				0CFA0F53F2B1359A945B5449 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CFA0F53F2B1359A945B5449 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SegmentSelectImageApp/Pods-SegmentSelectImageApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94564395ABC7FB86570EF2B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SegmentSelectImageApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5455E38B26AFE7E3007FA9D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +212,7 @@
 				5455E39726AFE7E3007FA9D1 /* ViewController.swift in Sources */,
 				5455E39326AFE7E3007FA9D1 /* AppDelegate.swift in Sources */,
 				5455E39526AFE7E3007FA9D1 /* SceneDelegate.swift in Sources */,
+				5455E3A726AFE82E007FA9D1 /* SegmentFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +356,7 @@
 		};
 		5455E3A426AFE7E9007FA9D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF217B69756D326DEBB3A225 /* Pods-SegmentSelectImageApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelectImageApp.SegmentSelectImageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5455E3A526AFE7E9007FA9D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DD45A93654984B3676B299 /* Pods-SegmentSelectImageApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SelectImageApp.SegmentSelectImageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
