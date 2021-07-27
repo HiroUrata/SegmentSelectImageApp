@@ -8,8 +8,12 @@
 import Foundation
 import UIKit
 
+
+
+
 class SegmentFile{
     
+    let alamofireModel = AlamofireModel()
     let uiSegmentetControl = UISegmentedControl()
     let segmentContentsArray = ["Cat","Dog","Bear","Sea","Mountain"]
     
@@ -25,11 +29,17 @@ extension SegmentFile{
                     
                 }
         
-        uiSegmentetControl.selectedSegmentTintColor = UIColor.gray
+        //uiSegmentetControl.addTarget(self, action: #selector(displayImage), for: .valueChanged)
+        
+        uiSegmentetControl.frame = CGRect(x: targetView.bounds.minX, y: targetView.bounds.minY, width: targetView.frame.size.width, height: targetView.frame.size.height)
+        
+        uiSegmentetControl.backgroundColor = UIColor.white
+        uiSegmentetControl.selectedSegmentTintColor = UIColor.systemGreen
         
         targetView.addSubview(uiSegmentetControl)
         
     }
-    
+
 }
+
 

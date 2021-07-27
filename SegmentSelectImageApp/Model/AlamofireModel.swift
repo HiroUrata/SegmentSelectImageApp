@@ -30,7 +30,7 @@ extension AlamofireModel{
 
                     let jsonResult:JSON = JSON(response.data as Any)
 
-                    for needDataCount in 0...15{
+                    for needDataCount in 0...10 - 1{
 
                         if jsonResult["hits"][needDataCount]["webformatURL"].string != nil{
 
@@ -43,6 +43,8 @@ extension AlamofireModel{
                             break  //取得できる"webformatURL"が無くなった時に処理を終わらせる
 
                         }
+                        print(self.jsonResultDatasArray)
+
                     }
 
                 case .failure:
